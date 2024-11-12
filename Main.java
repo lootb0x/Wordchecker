@@ -10,6 +10,27 @@ public class Main{
         System.out.println(words);
         WordChecker x = new WordChecker (words);
         System.out.println(x.isWordChain());
-        
+     
+        ArrayList<String> awords = new ArrayList<String>();
+        awords.add("to");
+        awords.add("too");
+        awords.add("stool");
+        awords.add("tools");
+        System.out.println(awords);
+        WordChecker z = new WordChecker (awords);
+        System.out.println(z.isWordChain());
+    
+        ArrayList<String> bwords = new ArrayList<String>();
+        bwords.add("catch");
+        bwords.add("bobcat");
+        bwords.add("catchacat");
+        bwords.add("cat");
+        bwords.add("at");
+        System.out.print(bwords);
+        WordChecker y = new WordChecker(bwords);
+        System.out.println(y.createList("cat"));
+        System.out.println(y.createList("catch")):
+        System.out.println(y.createList("dog"));
+
     }
  }

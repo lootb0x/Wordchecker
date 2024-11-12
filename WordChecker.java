@@ -19,15 +19,27 @@ public class WordChecker {
     */
    public boolean isWordChain() 
    {
+    String before;
+    String after;
     for(int i = 1; i<wordList.size(); i++)
     {
-        String after = wordList.get(i);
-        String before = wordList.get(i-1);
-        if(after.indexof(before) < 0) 
+        after = wordList.get(i);
+        before = wordList.get(i-1);
+        if(after.indexOf(before) == -1) 
         {
             return false;
         }
     }
     return true;
    }
+   public ArrayList<String> createList(String target) 
+   {
+    ArrayList<String> list = new ArrayList<String>();
+    for(String s : wordList)
+    {
+    if(s.indexOf(target) == 0)
+    list.add(s.substring(target.length())); 
+    }   
+    return list;
+}
 }
