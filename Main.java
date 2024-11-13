@@ -26,10 +26,9 @@ public class Main{
         bwords.add("catchacat");
         bwords.add("cat");
         bwords.add("at");
-        System.out.print(bwords);
         WordChecker y = new WordChecker(bwords);
         System.out.println(y.createList("cat"));
-        System.out.println(y.createList("catch")):
+        System.out.println(y.createList("catch"));
         System.out.println(y.createList("dog"));
 
     }
