@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 public class WordChecker {
-    /** Initialized in the constructor and contains no null elements */
     private ArrayList<String>wordList;
     public WordChecker(ArrayList<String> list)
     {
@@ -10,13 +9,7 @@ public class WordChecker {
     {
         wordList = new ArrayList<String>();
     }
-    /** 
-    * Returns true if each element of wordList (except the first) contains the
-    * previous
-    * element as a substring and returns false otherwise, as described in part (a)
-    * Precondition: wordList contains at least two elements.
-    * Postcondition: wordList is unchanged.
-    */
+  
    public boolean isWordChain() 
    {
     String before;
